@@ -1,0 +1,51 @@
+<html>
+
+</html>
+
+<script>
+    //var n1 = parseFloat(prompt("Digite a primeira nota"));
+    //var n2 = parseFloat(prompt("Digite a segunda nota"));
+    //var n3 = parseFloat(prompt("Digite a terceira nota"));
+    //var n4 = parseFloat(prompt("Digite a quarta nota"));
+    var peso1 = 3;
+    var peso2 = 2;
+
+    function calcula (n1, n2, n3, n4, peso1, peso2) {
+        if (Number.isInteger(n1, n2, n3, n4, peso1, peso2)) {
+         var nf = ((n1* peso1 + n2 * peso1) + (n3 * peso2 + n4 * peso2)) / (peso1 + peso1 + peso2 + peso2);
+        return nf;
+        }
+    
+        else{
+            alert("Por favor digite só numeros")
+        }
+    }
+
+    //console.log(calcula(n1, n2, n3, n4, peso1, peso2));
+
+    console.log("Teste 01 ");
+    console.log(calcula("car", "n2", "!n3", "pr", peso1, peso2));
+
+    console.log("Teste 02");
+    console.log(calcula(13, 13, 13, 13, peso1, peso2));
+
+    console.log("Teste 03");
+    console.log(calcula(12, 12, calcula(13, 13, 13, 13, peso1, peso2), 51 , peso1, peso2));
+
+
+    console.log("Teste 04");
+    console.log(calcula(4.22, "n2", "!n3", "pr", peso1, peso2));
+
+    console.log("Teste 05");
+    console.log(calcula( "", "n2", "!n3", "pr", peso1, peso2));
+
+    console.log("Teste 06");
+    console.log(calcula([], "n2", "!n3", "pr", peso1, peso2));
+
+
+
+
+
+
+
+</script>
